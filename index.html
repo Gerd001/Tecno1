@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,40 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #0a0000;
-            color: #1085d3;
+            background-color: #f2f5f0e8;
+            color: #010d14;
             margin: 0;
             padding: 0;
         }
 
         header {
             background-image: url(https://static.vecteezy.com/system/resources/previews/008/096/999/non_2x/abstract-background-black-stripe-with-red-plate-vector.jpg);
-            color: #f30e0edc;
+            color: #f30e0eef;
             text-align: left;
             padding: 1em;
+            position: relative; /* Añadido */
         }
+
         header img {
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            margin-left: 95%;
-            margin-top: -5em;
+            position: absolute; 
+            top: 50%; 
+            transform: translateY(-60%);
+            right: 10px; 
         }
+
         nav {
-            background-color: #ece5e2;
+            background-color: rgb(70, 4, 4);
             color: #0A0000;
             padding: 0.5em;
         }
 
         nav a {
-            color: #f5e9e9;
+            color: #fdfafa;
             text-decoration: none;
-            background-color: #8a0606;
+            background-color: #052407;
             border-radius: 20%;
             padding: 0.5em 0.3em;
             margin: 0 0.3em;
@@ -45,58 +51,104 @@
             max-width: 800px;
             margin: 2em auto;
             padding: 20px;
-            background-color: #5A7689;
-            box-shadow: 0 0 10px rgba(201, 13, 13, 0.1);
+            background-color: rgb(251, 253, 253);
+            box-shadow: 0 0 10px rgb(20, 20, 20);
         }
 
         img {
             max-width: 100%;
             height: auto;
-            margin-top: 20px;
+            margin-top: 1px;
         }
 
         footer {
             background-color: #010a13;
-            color: #ec5959;
+            color: #f1e7e7;
             text-align: center;
             padding: 1em;
-            position: sticky;
-            bottom: 1;
+            bottom: 0;
             width: 100%;
         }
+
+.foto-container {
+    display: flex;
+    size-adjust: 20px;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.foto {
+    width: 25%;
+}
+
+.descripcion {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    color: #850c0c;
+    text-align: justify;
+}
     </style>
 </head>
-<body>
 
+<body>
     <header>
         <h1>⌂ INICIO</h1>
-        <color: #2C3E50>
-        <img src="C:\Users\MINEDUCYT\Desktop\ESTUDIO\RAMOS PAGINA WEB\LOGO.png">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/002/638/624/small_2x/r-alphabet-letter-logo-icon-in-black-and-white-color-company-and-business-design-with-square-and-red-dot-creative-corporate-identity-template-vector.jpg"
+            alt="Descripción de la imagen">
     </header>
-    <width: 100%;>
-    <float: left; 100%>
-    <margin-right; 100px>
-
     <nav>
         <a href="#">Redes</a>
         <a href="#">Servicios</a>
-        <a href="https://wa.me/77401302" target="_blank">Contacto directo</a>
+        <a href="https://wa.me/77401302" target="_blank">WhatsApp</a>
         <a href="#" onclick="mostrarTextoConocenos()">Conócenos</a>
+    </nav>
+
     <section>
         <h2>LO NUEVO</h2>
         <p>"SOMOS TÚ MEJOR OPCION EN TECNOLOGÍA"</p>
-        <img src="https://mercado.com.ar/wp/wp-content/uploads/2023/05/7-1.png">
-        <p>"Esta cámara E-330 es la respuesta de Olympus
-           para aquellos fotógrafos que demandaban una pantalla
-         de visualización para aquellas tomas más complicadas y en posturas no muy cómodas."
-        <img src="https://i.blogs.es/80e439/e330-producto/450_1000.gif">
-        <width: 100%;>
-        <margin-right; 100%>
+        <img src="https://mercado.com.ar/wp/wp-content/uploads/2023/05/7-1.png"
+            alt="Descripción de la nueva tecnología">
+        <p>""</p>
+        <img src="">
+        <img src="">
+        <img src="">
     </section>
+    <!-- Galería de Fotos -->
+    <div class="foto-container">
+        <div class="foto">
+            <img src="https://elsalvador.solutekla.com/photo/1/apple/audifonos_inalambricos/apple_mmef2bea_airpods_color_blanco/apple_mmef2bea_airpods_color_blanco_0001">
+            <p class="descripcion"> AirPods Pro</p>
+            <p class="descripcion"> Olvídese de los iPhone, los AirPods son el mejor hardware de Apple en años. Y después de haber modificado el diseño con los AirPods Gen 2 en marzo, ahora Apple está de regreso con los AirPods Pro, una revisión completa de este producto obscenamente popular.</p>
+        </div>
 
+        <div class="foto">
+            <img src="https://i.blogs.es/80e439/e330-producto/450_1000.gif" alt="Foto 2">
+            <p class="descripcion">Cámara E-330</p>
+            <p class="descripcion">Esta cámara E-330 es la respuesta de Olympus
+                para aquellos fotógrafos que demandaban una pantalla
+                de visualización para aquellas tomas más complicadas y en posturas no muy cómodas.</p>
+        </div>
+
+        <div class="foto">
+            <img src="https://siman.vtexassets.com/arquivos/ids/1108420-800-800?v=637487595786130000&width=800&height=800&aspect=true" alt="Foto 3">
+            <p class="descripcion"> Huawei GT2 Pro</p>
+            <p class="descripcion"> Deja que lo que llevas en la muñeca se adapte a la perfección a tu vida. El acabado circular y la pantalla redondeada ofrecen un aspecto clásico y una sensación de fluidez, mientras que la impresionante pantalla AMOLED de 1.43 pulgadas lleva el diseño del reloj inteligente a un futuro brillante, justo ante tus ojos.</p>
+        </div>
+    </div>
+
+    <div class="foto">
+        <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=414x1024:format=jpg/path/s721793103b0e5c9b/image/i6432898741bc1dc2/version/1664312412/image.jpg" alt="Foto 4">
+        <p class="descripcion"> Tira Led</p>
+        <p class="descripcion"> TIRA LED EPISTAR Uso Interior / IP20 con cinta 3M 60 Luces por cada metro Colores en Stock:  Blanco 6500K .</p>
+    </div>
+    <!-- Fin Galería de Fotos -->
     <footer>
         <p>&copy; TecnoTest</p>
     </footer>
 
 </body>
+
 </html>
