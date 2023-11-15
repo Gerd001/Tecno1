@@ -8,15 +8,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f5f0e8;
-            color: #010d14;
+            background-color: #f3f7f1e8;
+            color: #350404;
             margin: 0;
             padding: 0;
         }
 
         header {
             background-image: url(https://static.vecteezy.com/system/resources/previews/008/096/999/non_2x/abstract-background-black-stripe-with-red-plate-vector.jpg);
-            color: #f30e0eef;
+            color: #690707ef;
             text-align: left;
             padding: 1em;
             position: relative;
@@ -34,7 +34,7 @@
 
         nav {
             background-color: rgb(70, 4, 4);
-            color: #0A0000;
+            color: #fdfafa;
             padding: 0.5em;
         }
 
@@ -45,14 +45,17 @@
             border-radius: 20%;
             padding: 0.5em 0.3em;
             margin: 0 0.3em;
+            font-size: 12px;
         }
 
         section {
-            max-width: 800px;
+            max-width: 600px;
             margin: 2em auto;
             padding: 20px;
             background-color: rgb(251, 253, 253);
             box-shadow: 0 0 10px rgb(20, 20, 20);
+            font-size: 14px;
+            text-align: center;
         }
 
         img {
@@ -63,37 +66,40 @@
 
         footer {
             background-color: #330202;
-            color: #9b1818;
+            color: #140101;
             text-align: center;
+            font-size: 1px;
             padding: 1em;
             bottom: 0;
             width: 100%;
         }
 
-.foto-container {
-    display: flex;
-    size-adjust: 10px;
-    justify-content: space-between;
-    margin: 15px 2;
-}
+        .foto-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 15px 2;
+        }
 
-.foto {
-    width: 30%;
-    max-width: 200%;
-    height: auto;
-    margin-bottom: -10px; 
-}
+        .foto {
+            width: 20%;
+            max-width: 200%;
+            height: auto;
+            margin-bottom: -10px; 
+            text-align: center;
+            margin: 5px;
+        }
 
-.descripcion {
-    text-align: center;
-    margin-top: 5px;
-    margin-left: 10%;
-    margin-right: 5%;
-    font-size: 15px;
-    color: #850c0c;
-    text-align: justify;
-    letter-spacing: 0.5px;
-}
+        .descripcion {
+            margin-top: 5px;
+            text-align: center;
+            margin-left: 5%;
+            margin-right: 5%;
+            font-size: 13px;
+            color: #020111;
+            text-align: justify;
+            letter-spacing: 0.3px;
+        }
     </style>
 </head>
 
@@ -111,17 +117,18 @@
     </nav>
 
     <section>
-        <h2>LO NUEVO</h2>
-        <p>"SOMOS TÚ MEJOR OPCION EN TECNOLOGÍA"</p>
+        <h2><b>LO NUEVO</b></h2>
+        <p>"SOMOS TÚ MEJOR OPCIÓN EN TECNOLOGÍA"</p>
         <img src="https://mercado.com.ar/wp/wp-content/uploads/2023/05/7-1.png"
             alt="Descripción de la nueva tecnología">
     </section>
+
     <!-- Galería de Fotos -->
     <div class="foto-container">
         <div class="foto">
             <img src="https://elsalvador.solutekla.com/photo/1/apple/audifonos_inalambricos/apple_mmef2bea_airpods_color_blanco/apple_mmef2bea_airpods_color_blanco_0001">
-            <p class="descripcion"> AirPods Pro</p>
-            <p class="descripcion"> Olvídese de los iPhone, los AirPods son el mejor hardware de Apple en años. Y después de haber modificado el diseño con los AirPods Gen 2 en marzo, ahora Apple está de regreso con los AirPods Pro, una revisión completa de este producto obscenamente popular.</p>
+            <p class="descripcion">AirPods Pro</p>
+            <p class="descripcion">Olvídese de los iPhone, los AirPods son el mejor hardware de Apple en años. Y después de haber modificado el diseño con los AirPods Gen 2 en marzo, ahora Apple está de regreso con los AirPods Pro, una revisión completa de este producto obscenamente popular.</p>
         </div>
 
         <div class="foto">
@@ -134,25 +141,34 @@
 
         <div class="foto">
             <img src="https://siman.vtexassets.com/arquivos/ids/1108420-800-800?v=637487595786130000&width=800&height=800&aspect=true" alt="Foto 3">
-            <p class="descripcion"> Huawei GT2 Pro</p>
-            <p class="descripcion"> Deja que lo que llevas en la muñeca se adapte a la perfección a tu vida. El acabado circular y la pantalla redondeada ofrecen un aspecto clásico y una sensación de fluidez, mientras que la impresionante pantalla AMOLED de 1.43 pulgadas lleva el diseño del reloj inteligente a un futuro brillante, justo ante tus ojos.</p>
+            <p class="descripcion">Huawei GT2 Pro</p>
+            <p class="descripcion">Deja que lo que llevas en la muñeca se adapte a la perfección a tu vida. El acabado circular y la pantalla redondeada ofrecen un aspecto clásico y una sensación de fluidez, mientras que la impresionante pantalla AMOLED de 1.43 pulgadas lleva el diseño del reloj inteligente a un futuro brillante, justo ante tus ojos.</p>
         </div>
-    </div>
 
-    <div class="foto">
-        <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=414x1024:format=jpg/path/s721793103b0e5c9b/image/i6432898741bc1dc2/version/1664312412/image.jpg" alt="Foto 4">
-        <p class="descripcion"> Tira Led</p>
-        <p class="descripcion"> TIRA LED EPISTAR Uso Interior / IP20 con cinta 3M 60 Luces por cada metro Colores en Stock:  Blanco 6500K .</p>
-    </div>
+        <div class="foto">
+            <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=414x1024:format=jpg/path/s721793103b0e5c9b/image/i6432898741bc1dc2/version/1664312412/image.jpg" alt="Foto 4">
+            <p class="descripcion">Tira Led</p>
+            <p class="descripcion">TIRA LED EPISTAR Uso Interior / IP20 con cinta 3M 60 Luces por cada metro Colores en Stock: Blanco 6500K.</p>
+        </div>
 
+        <div class="foto">
+            <img src="https://bunny-cdn.ventasxmayor.com/6060d74cd1d2d2d24cd1d2d2d26363/public/chauchaypalito.com.ar/wp-content/uploads/2022/01/282991.jpg" alt="Foto 5">
+            <p class="descripcion">Lámpara Luna</p>
+            <p class="descripcion">Lámpara Luna con control remoto y LED de 16 colores. Trae Control Remoto para que la puedas manejar a distancia 16 tonos de luz de intensidad e intercambio regulable Se carga por USB y posee botón touch de encendido/apagado y regulación de luz. Incluye pie y cable de carga INFORMACIÓN DETALLADA Material: Plástico - Base de Madera Dimensiones: 15 cm de diámetro.</p>
+        </div>
+
+        <div class="foto">
+            <img src="https://m.media-amazon.com/images/I/51i-5bv61SS._AC_UF1000,1000_QL80_.jpg" alt="Foto 6">
+            <p class="descripcion">Reproductor MP3</p>
+            <p class="descripcion">RUIZU - Reproductor de MP3 con Bluetooth 5.0, reproductor de música portátil de 8 GB para niños, reproductores de audio digital con radio FM, grabadora de voz, reproducción de video, libro electrónico, reproducción de 80 horas, compatible con tarjeta micro SD de hasta 128 GB.</p>
+        </div>
     </div>
     <!-- Fin Galería de Fotos -->
     <footer>
-        <section>
-            <h2>"Tú experiencia con nosotros sera inigualable"
-        <p>&copy; TecnoTest</p>
     </footer>
-
-</body>
+    <section style="text-align: center; background-color: #000000; color: rgb(14, 98, 243); font-size: 18px;">
+        <p><b>"Aca tendrás la mejor experiencia tecnológica"<b></p>
+        <p>&copy; TecnoTest</p>
+    </section>
 
 </html>
