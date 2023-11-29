@@ -1,174 +1,556 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TecnoTest</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>IRCA ZACATECOLUCA
+    </title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f7f1e8;
-            color: #350404;
-            margin: 0;
-            padding: 0;
-        }
+     
+     nav {
+      background-color: #222;
+        
 
-        header {
-            background-image: url(https://static.vecteezy.com/system/resources/previews/008/096/999/non_2x/abstract-background-black-stripe-with-red-plate-vector.jpg);
-            color: #690707ef;
-            text-align: left;
+    
+    }
+
+    nav image {
+      max-width: 2000px;
+      max-height: 500px;
+    }
+    .carousel-caption h3 {
+          
+          font-size: 24px;
+          color: #ffffff;
+      }
+
+      .carousel-caption p {
+          font-size: 18px; 
+          color: #010116;
+        } 
+    
+    header {
+            background-color: #333;
+            color: white;
             padding: 1em;
-            position: relative;
+            text-align: left;
+            border-bottom: 5px solid #111; /* Agregado: Borde de color para los enlaces de navegación */
+            
         }
 
         header img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            position: absolute; 
-            top: 50%; 
-            transform: translateY(-60%);
-            right: 10px; 
+            max-height: 50px; /* Ajusta la altura de la imagen según tus necesidades */
+            margin-right: 1em;
+            margin-right: 1500px;
+        }
+    
+    /* Estilos para el botón */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      
+    }
+
+    /* Estilos para el menú desplegable */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #CDF5FD;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Estilos para la información adicional */
+    #informacionAdicional {
+      margin-top: 10px;
+    }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
         }
 
-        nav {
-            background-color: rgb(70, 4, 4);
-            color: #fdfafa;
-            padding: 0.5em;
-        }
 
-        nav a {
-            color: #fdfafa;
+       
+        
+        .section1 {
+            background-color: #F90F10; /* Rojo */
+            color: white;
+            padding: 0.5em 1em;
             text-decoration: none;
-            background-color: #000000;
-            border-radius: 20%;
-            padding: 0.5em 0.3em;
-            margin: 0 0.3em;
-            font-size: 12px;
-        }
-
-        section {
-            max-width: 600px;
-            margin: 2em auto;
-            padding: 20px;
-            background-color: rgb(251, 253, 253);
-            box-shadow: 0 0 10px rgb(20, 20, 20);
-            font-size: 14px;
+            margin-right: 1em;
+            border-radius: 80px;
             text-align: center;
+            max-width: 200px;
         }
 
-        img {
-            max-width: 100%;
+        body {
+            background-color: #222;
+        }
+
+   
+        section {
+            padding: 2em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: normal;
+        }
+        .gastro {
+            position: relative;
+            max-width: 75%;
+            height: 600px;
+     
+           border: 1px solid #444;
+            background-color: #333;
+            color: #ffffff;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 20pt;
+            width: calc(62% - 2em);
+          }
+
+       .gastro image {
+           max-width: 75%;
             height: auto;
-            margin-top: 1px;
+            margin-bottom: 1em;
+            border-radius: 20pt;
+        }
+
+        .texto {
+         position: absolute;
+          top: 70%;
+          left: 75%;
+         transform: translate(-50%, -50%);
+          z-index: 1;
+         background-color: #444;
+         padding: 10px;
+          border-radius: 10px;
+        }
+
+        .imagen {
+           width: 100%;
+            height: 100%;
+           object-fit: cover;
+        }
+
+
+        .product {
+            border: 1px solid #444;
+            background-color: #333;
+            color: #ffff;
+            border-radius: 20pt;
+            padding: 1em;
+            margin: 1em;
+            text-align: center;
+            width: calc(31% - 2em); /* Calcula el ancho para tres productos por fila */
+        }
+
+        .product img {
+            max-width: 75%;
+            height: auto;
+            margin-bottom: 1em;
+            border-radius: 20pt;
+        }
+
+        .whatsapp-button {
+            background-color: #084184;
+            color: white;
+            padding: 1em;
+            text-align: justify;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            border-radius: 80px;
+            margin-top: 1em;
         }
 
         footer {
-            background-color: #330202;
-            color: #140101;
+            background-color: #333;
+            color: white;
             text-align: center;
-            font-size: 1px;
             padding: 1em;
-            bottom: 0;
-            width: 100%;
+            position: static;
         }
 
-        .foto-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 15px 2;
-        }
-
-        .foto {
-            width: 20%;
-            max-width: 200%;
-            height: auto;
-            margin-bottom: -10px; 
+        footer image {
+          border: 1px solid #444;
+            background-color: #333;
+            color: #ffff;;
+            padding: 1em;
+            margin: 1em;
             text-align: center;
-            margin: 5px;
-        }
+            width: calc(50% - 2em); /* Calcula el ancho para tres productos por fila */
 
-        .descripcion {
-            margin-top: 5px;
-            text-align: center;
-            margin-left: 5%;
-            margin-right: 5%;
-            font-size: 13px;
-            color: #020111;
-            text-align: justify;
-            letter-spacing: 0.3px;
+
         }
     </style>
-</head>
 
+</head>
+<title>IRCA ZACATECOLUCA</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .bouncing-bubble {
+      position: relative;
+      animation: bounce 0.5s infinite alternate;
+      width: 200px; /* Ancho de la burbuja */
+      height: 200px; /* Altura de la burbuja */
+      background-color: #000000; 
+      border-radius: 50%; /* Hace que el div tenga forma de círculo */
+      overflow: hidden;
+    }
+
+    @keyframes bounce {
+      to {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
 <body>
     <header>
-        <h1>⌂ INICIO</h1>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/002/638/624/small_2x/r-alphabet-letter-logo-icon-in-black-and-white-color-company-and-business-design-with-square-and-red-dot-creative-corporate-identity-template-vector.jpg"
-            alt="Descripción de la imagen">
+       
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEJZtONpT-64dlhXfDBsbTE92pT5IIcPhmgQkO5L2kj7jxftRCoccHEAKVo-cCRHzVeOybxduAIyUbUqV7Ol8ghN2iC-yl9YwOutMjTGMswO3jpFaZ_RtcbN3kLYtk4ExZM2s7srTn5xw5cdIdfpohrJvpJR9RkQDs0lE0MQ1cPqnTZQekBxyV3C21I08/s320/IRCA%20LOGO.png" />
+       
+            </div>
+        </div>
+        
+        
+            </div>
+        </div>
+
+        
+        </div>
+         
     </header>
+
+<!-- Botón -->
+<button class="btn" onclick="mostrarInformacion('Inicio')">Inicio</button>
+
+<!-- Menú desplegable -->
+
+  <div class="dropdown">
+    <button class="btn">Diplomados</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="mostrarInformacion('Opción 1')">Sistemas Informaticos</a>
+      <a href="#" onclick="mostrarInformacion('Opción 2')">Gastrnomia Profesional</a>
+      <a href="#" onclick="mostrarInformacion('Opción 3')">Mecanica Automotriz</a>
+      <a href="#" onclick="mostrarInformacion('Opción 4')">Mecanica de Motos</a>
+      <a href="#" onclick="mostrarInformacion('Opción 5')">Secretariado</a>
+      <a href="#" onclick="mostrarInformacion('Opción 6')">Electrcidad Residencial</a>
+      <a href="#" onclick="mostrarInformacion('Opción 7')">Gestion Turistica</a>
+
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="btn">Cursos</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="mostrarInformacion('Opción 1')">Diseño Publicitario</a>
+      <a href="#" onclick="mostrarInformacion('Opción 2')"></a>
+      <a href="#" onclick="mostrarInformacion('Opción 3')"></a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="btn">Contactos</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="mostrarInformacion('Opción 1')"></a>
+      <a href="#" onclick="mostrarInformacion('Opción 2')"></a>
+      <a href="#" onclick="mostrarInformacion('Opción 3')">/a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="btn">Ubicación</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="mostrarInformacion('Opción 1')">Regionales</a>
+      <a href="#" onclick="mostrarInformacion('Opción 2')"></a>
+      <a href="#" onclick="mostrarInformacion('Opción 3')"></a>
+    </div>
+  </div>
+<!-- Contenedor para la información adicional -->
+<div id="informacionAdicional"></div>
+
+<script>
+  function mostrarInformacion(texto) {
+    document.getElementById('informacionAdicional').innerHTML = '<p>' + texto + '</p>';
+  }
+</script>
+<body>
+   
+    
+    
+
     <nav>
-        <a href="#">Redes</a>
-        <a href="#">Servicios</a>
-        <a href="https://wa.me/77401302" target="_blank">WhatsApp</a>
-        <a href="#" onclick="mostrarTextoConocenos()">Conócenos</a>
+        <div class="container">
+            <br>
+            <div id="theCarousel" class="carousel slide" data-ride="carousel">
+              
+              <ol class="carousel-indicators">
+                <li data-target="#theCarousel" data-slide-to="8" class="active"></li>
+                <li data-target="#theCarousel" data-slide-to="1"></li>
+                <li data-target="#theCarousel" data-slide-to="2"></li>
+                <li data-target="#theCarousel" data-slide-to="3"></li>
+                <li data-target="#theCarousel" data-slide-to="4"></li>
+                <li data-target="#theCarousel" data-slide-to="5"></li>
+                <li data-target="#theCarousel" data-slide-to="6"></li>
+                <li data-target="#theCarousel" data-slide-to="7"></li>
+                <li data-target="#theCarousel" data-slide-to="8"></li>
+                
+              </ol>
+          
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQH5_Y3oV8sS2yA_zm1jRCSuSaAHHS8F1pKhVtYbVAOHQTaYmnsDPkj2A3IuB76UVpxQoRiduwEZ-DLGzj42SzIDFHUvi6rN0t3zWosWiBNJkZ8HmY3L9xK38eVLd8Tzr0YI6aRW7MA2sJrwN5Wr0wLcbkFJldt28Uel22JYRKoXcRNVQ7ieNQujjbFl8/s16000/BANNER%20WEB.jpg" alt="Ilustracion"width="1200" height="424"> 
+                   <div class="carousel-caption d-none d-md-block">
+              <h3> </h3>
+              <p> </p>
+            </div>
+                </div>
+          
+              
+                <div class="item">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg15va_rFK999TDl9_RkNHptfACewhsOypIcNncUcc1yXF7flxK0ELFvLikzVsSh4Ckn9kJ_hP1tvnD0jz-l1jHfiMugrZsM3F3lMJOrAxlirL4gBYJ08f5bXZGaOSekP6pBNJFO6LmBfDNYgOjlCI-t08NvJkuH6Aq_WMo9hJBnfq24_a3AIkG4RLA9JY/s16000/BANNER%202%20WEB.jpg" alt="fotografia" width="1200" height="424"> 
+                   <div class="carousel-caption d-none d-md-block">
+              <h3> </h3>
+              <p> </p>
+            </div>
+                </div>
+          
+               <div class="item">
+                  <img src="https://www.diariodesevilla.es/2020/06/03/pds/Playa-Salinas-Almeria_1470463148_122223454_667x375.jpg" alt="pintura" width="1000" height="424">
+                   <div class="carousel-caption d-none d-md-block">
+              <h3>DoArt Pintura</h3>
+              <p>Curso</p>
+            </div>
+                </div>
+                 <div class="item">
+                  <img src="https://www.lavanguardia.com/andro4all/hero/2023/07/redmi-watch-3-active.1689861716.983.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="diseno" width="900" height="424"> 
+                   <div class="carousel-caption d-none d-md-block">
+              <h3>Gastronomia Profesional</h3>
+              <p>DIPLOMADO</p>
+            </div>
+                </div>
+                <div class="item">
+                    <img src="https://www.celag.org/wp-content/uploads/2018/05/internet-de-las-cosasDEF.jpg" alt="diseno" width="1000" height="424"> 
+                     <div class="carousel-caption d-none d-md-block">
+                <h3>UX UI Diseño Gráfico</h3>
+                <p>Curso</p>
+              </div>
+                  </div>
+                  <div class="item">
+                    <img src="https://www.randstad.es/wp-content/uploads/2016/08/tecnologia-futuro-y-nuevos-empleos-880.jpg" alt="diseno" width="600" height="424"> 
+                     <div class="carousel-caption d-none d-md-block">
+                <h3>UX UI Diseño Gráfico</h3>
+                <p>Curso</p>
+              </div>
+                  </div>
+                  <div class="item">
+                    <img src="file://daniel/Users/Public/BANNER%201%20WEB.jpg" alt="diseno" width="1500" height="700"> 
+                     <div class="carousel-caption d-none d-md-block">
+                <h3>UX UI Diseño Gráfico</h3>
+                <p>Curso</p>
+              </div>
+                  </div>
+                  <div class="item">
+                    <img src="https://i0.wp.com/www.asociaciondefotografiaf22.com/wp-content/uploads/2016/04/RecortarPS.jpg?ssl=1" alt="diseno" width="700" height="400"> 
+                     <div class="carousel-caption d-none d-md-block">
+                <h3>UX UI Diseño Gráfico</h3>
+                <p>Curso</p>
+              </div>
+                  </div>
+                  <div class="item">
+                    <img src="https://images.ctfassets.net/h6goo9gw1hh6/3XxJnwhj1x1P4FlzCybOUR/1e25cfc329770a3f6a16f87697ffe4f9/high-res-TW.png" alt="diseno" width="600" height="424"> 
+                     <div class="carousel-caption d-none d-md-block">
+                <h3>UX UI Diseño Gráfico</h3>
+                <p>Curso</p>
+              </div>
+                  </div>
+          
+          
+              <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">anterior</span>
+              </a>
+              <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">siguiente</span>
+              </a>
+            </div>
     </nav>
 
     <section>
-        <h2><b>LO NUEVO</b></h2>
-        <p>"SOMOS TÚ MEJOR OPCIÓN EN TECNOLOGÍA"</p>
-        <img src="https://mercado.com.ar/wp/wp-content/uploads/2023/05/7-1.png"
-            alt="Descripción de la nueva tecnología">
+      <div class="gastro"> 
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL6MVvcbbGIudR-6fjr2J8CETLKBDi7lzmBZde_Gfvq8axv2YC0S4mO2HOtkLtCZOHvxqi-1mvx7qYuuPvwyy7BNmIcIDwU6muH8UxRnFfMgzyPVWqZxgnjYONfx-JPgrmYTD0TPRIU9FV-ddNINaDl20jMqKmK4yuq3ll9TMiT694Otc0eFOZm5tVsHo/s320/SEC.jpg" height="500px" width="75%" style="border-radius: 20pt;" style="float: left;" class="imagen">
+        <div style="float: right;">
+          <div class="texto">
+          <h2>GASTRONOMIA</h2>
+          <p style="max-width: 300px; font-size: 16px;">No hay nadie que ame el dolor de por sí
+             que lo busque y quiera tenerlo, simplemente
+              por el hecho de ser dolor".</p>
+          <p>DURACION: 2 AÑOs </p>
+          <a href="https://wa.me/75870629" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+          </div>
+        </div>
+      </div>
+      
+        <div class="product">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYJTZpXzrjrOZn__tqu33tE7wbrJ7aowvzImFbbLUlaQ3fOEpHSfVglSczEtGW8mNt_fBCdddpWhmI83ZmDMAfpihR7isBrg_tQF3Qsv7fKi7iVr2CYYCAaao-set0o7QrWE5t6q52IBJMMhMFg4xLgRc5BAGDgkOMoFuHBCnJkPV8N9kqHi0BlmsqWwY/s320/DIS%20G.jpg" >
+            <h2>SECRETARIADO</h2>
+            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
+            <p>DURACION: 1 AÑO </p>
+            <a href="https://wa.me/75870629" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+
+        </div>
+
+       
+        <div class="product">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYJTZpXzrjrOZn__tqu33tE7wbrJ7aowvzImFbbLUlaQ3fOEpHSfVglSczEtGW8mNt_fBCdddpWhmI83ZmDMAfpihR7isBrg_tQF3Qsv7fKi7iVr2CYYCAaao-set0o7QrWE5t6q52IBJMMhMFg4xLgRc5BAGDgkOMoFuHBCnJkPV8N9kqHi0BlmsqWwY/s320/DIS%20G.jpg" alt="SECRETARIADO">
+            <h2>SISISTEMAS INFORMATICOS</h2>
+            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
+            <p>DURACION: 6 MESES </p>
+            <a href="https://wa.me/75870629" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+        </div>
+
+        <div class="product">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL6MVvcbbGIudR-6fjr2J8CETLKBDi7lzmBZde_Gfvq8axv2YC0S4mO2HOtkLtCZOHvxqi-1mvx7qYuuPvwyy7BNmIcIDwU6muH8UxRnFfMgzyPVWqZxgnjYONfx-JPgrmYTD0TPRIU9FV-ddNINaDl20jMqKmK4yuq3ll9TMiT694Otc0eFOZm5tVsHo/s320/SEC.jpg" alt="GASTRONOMIA">
+            <h2>MECANICA DE AUTO</h2>
+            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
+            <p>DURACION: 2 AÑO </p>
+            <a href="https://wa.me/75870629" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+        </div>
+
+        <div class="product">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYJTZpXzrjrOZn__tqu33tE7wbrJ7aowvzImFbbLUlaQ3fOEpHSfVglSczEtGW8mNt_fBCdddpWhmI83ZmDMAfpihR7isBrg_tQF3Qsv7fKi7iVr2CYYCAaao-set0o7QrWE5t6q52IBJMMhMFg4xLgRc5BAGDgkOMoFuHBCnJkPV8N9kqHi0BlmsqWwY/s320/DIS%20G.jpg" alt="SECRETARIADO">
+            <h2>MECANICA DE MOTOS</h2>
+            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
+            <p>DURACION: 1 AÑO </p>
+            <a href="https://wa.me/75870629" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+        </div>
+
+        <div class="product">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL6MVvcbbGIudR-6fjr2J8CETLKBDi7lzmBZde_Gfvq8axv2YC0S4mO2HOtkLtCZOHvxqi-1mvx7qYuuPvwyy7BNmIcIDwU6muH8UxRnFfMgzyPVWqZxgnjYONfx-JPgrmYTD0TPRIU9FV-ddNINaDl20jMqKmK4yuq3ll9TMiT694Otc0eFOZm5tVsHo/s320/SEC.jpg" alt="GASTRONOMIA">
+            <h2>REFRIGERACION Y A/C</h2>
+            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
+            <p>DURACION: 6 MESES </p>
+            <a href="https://wa.me/75870629" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+        </div>
+
+        <div class="product">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYJTZpXzrjrOZn__tqu33tE7wbrJ7aowvzImFbbLUlaQ3fOEpHSfVglSczEtGW8mNt_fBCdddpWhmI83ZmDMAfpihR7isBrg_tQF3Qsv7fKi7iVr2CYYCAaao-set0o7QrWE5t6q52IBJMMhMFg4xLgRc5BAGDgkOMoFuHBCnJkPV8N9kqHi0BlmsqWwY/s320/DIS%20G.jpg" alt="SECRETARIADO">
+            <h2>DISEÑO GRÁFICO</h2>
+            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
+            <p>DURACION: 1 AÑO </p>
+            <a href="https://wa.me/75870629" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+        </div>
+
+        <div class="product">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL6MVvcbbGIudR-6fjr2J8CETLKBDi7lzmBZde_Gfvq8axv2YC0S4mO2HOtkLtCZOHvxqi-1mvx7qYuuPvwyy7BNmIcIDwU6muH8UxRnFfMgzyPVWqZxgnjYONfx-JPgrmYTD0TPRIU9FV-ddNINaDl20jMqKmK4yuq3ll9TMiT694Otc0eFOZm5tVsHo/s320/SEC.jpg" alt="GASTRONOMIA">
+            <h2>INFORMATICA BASICA</h2>
+            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
+            <p>DURACION: 6 MESES </p>
+            <a href="https://wa.me/75870629" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+        </div>
+
+        <div class="product">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYJTZpXzrjrOZn__tqu33tE7wbrJ7aowvzImFbbLUlaQ3fOEpHSfVglSczEtGW8mNt_fBCdddpWhmI83ZmDMAfpihR7isBrg_tQF3Qsv7fKi7iVr2CYYCAaao-set0o7QrWE5t6q52IBJMMhMFg4xLgRc5BAGDgkOMoFuHBCnJkPV8N9kqHi0BlmsqWwY/s320/DIS%20G.jpg" alt="SECRETARIADO">
+            <h2>GESTION TURIRSTICA</h2>
+            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
+            <p>DURACION: 1 AÑO </p>
+            <a href="https://wa.me/75870629" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+        </div>
+
+        <div class="product">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL6MVvcbbGIudR-6fjr2J8CETLKBDi7lzmBZde_Gfvq8axv2YC0S4mO2HOtkLtCZOHvxqi-1mvx7qYuuPvwyy7BNmIcIDwU6muH8UxRnFfMgzyPVWqZxgnjYONfx-JPgrmYTD0TPRIU9FV-ddNINaDl20jMqKmK4yuq3ll9TMiT694Otc0eFOZm5tVsHo/s320/SEC.jpg" alt="GASTRONOMIA">
+            <h2>ELECTRICIDAD RESIDENCIAL</h2>
+            <p>"No hay nadie que ame el dolor de por sí, que lo busque y quiera tenerlo, simplemente por el hecho de ser dolor".</p>
+            <p>DURACION: 6 MESES </p>
+            <a href="https://wa.me/75870629" class="whatsapp-button" target="_blank">INSCRÍBITE</a>
+        </div>
+         <!-- Botón fijo elíptico para WhatsApp con imagen -->
+<a href="https://wa.me/75870629" target="_blank" style="position: fixed; bottom: 50px; right: 10px; width: 60px; height: 60px; background-color: #25d366; border-radius: 50%; text-decoration: none; display: flex; align-items: center; justify-content: center; background-image: url('https://icones.pro/wp-content/uploads/2021/02/icone-du-logo-whatsapp-vert.png'); background-size: cover;"></a>
+<!-- Fin del botón fijo elíptico para WhatsApp con imagen -->
+
+
+        <!-- Puedes añadir más productos aquí -->
     </section>
 
-    <!-- Galería de Fotos -->
-    <div class="foto-container">
-        <div class="foto">
-            <img src="https://elsalvador.solutekla.com/photo/1/apple/audifonos_inalambricos/apple_mmef2bea_airpods_color_blanco/apple_mmef2bea_airpods_color_blanco_0001">
-            <p class="descripcion">AirPods Pro</p>
-            <p class="descripcion">Olvídese de los iPhone, los AirPods son el mejor hardware de Apple en años. Y después de haber modificado el diseño con los AirPods Gen 2 en marzo, ahora Apple está de regreso con los AirPods Pro, una revisión completa de este producto obscenamente popular.</p>
+   <footer style="text-align: center;">
+    <p>DESARROLLADORES</p>
+    <div style="display: flex; justify-content: center;">
+      <div class="bouncing-bubble">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2ArKk2vZYzWobwJM3z1UTtRyVhCCQuZRghIc-zLEAEHsaDb9D8sxIOb-ITDowvw3esg8ShCfzy5ONuNDKc6CozPHEZQB6qsqnilJXkgw1efTM3HHZNL5i5pEe3HSJ7SA8qOhEg2l6VSK798GAXJK0Y9u5foV2Kze3YdK7mHy7g94b2rK_eHNY9qzi_jI/s320/ALEXS%20ICON.png" width="200" height="200"> 
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <div class="bouncing-bubble">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFugpQQWB9eBYCgOoi8aNyvTCG_5am41ULQwDUqg8VsXEAI4BUv19yoK87oRaccoUfUJFVKo8Gt27YhsY-kWAcyZ9OyJ7nyhpkT8LKNTMVtrdOzWLAVj6v0Pq68_v0gDHlf_3q-_W5wEyyyNX_ggkEK64WAf5V0rfWssw6GY541-XiJMAr1zwn-Z-3ATQ/s320/KEVIN%20ICON.png" width="200" height="200"> 
         </div>
+        <div style="display: flex; justify-content: center;">
+          <div class="bouncing-bubble">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOdsBZMtV4YNvbp2RjjvEVsRNUasbrlDUHrlz3Pnlka5ElsB5bQAm-4qX3lLUbLHYdcxuQed3Wj7WEuXbLSNZFFxzzVi5hGuBiyfX9cNoiSPNNG4sKxAaGLBDtKx9ehk18qliFnq7jX3MSs9cLkFvGfE2iPjeaDpc6VObEIXDWd329-QvKW5yuVgn2Atg/s320/EMANUEL%20ICON.png" width="200" height="200"> 
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <div class="bouncing-bubble">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHJYjPg9QpsAnnH6OksWf_sDI2uR-SUGQk_YQNRWUzt-7HV046A84F5hROr2anxJOvkJJ8yGKIG0DmVAAekIGGTD0yT_PRfvn_gC-W3ZlhOzw_pQiAM4MdAYo6fHUWX1a-impnOVFPqxuaxj-wK-2Txzc-hwn_ztyOh3l8gM3VrXUURPB7loYs-NV2T2o/s320/VANE%20ICON.png" width="200" height="200"> 
+            </div>
+  </div>
+</footer>
 
-        <div class="foto">
-            <img src="https://i.blogs.es/80e439/e330-producto/450_1000.gif" alt="Foto 2">
-            <p class="descripcion">Cámara E-330</p>
-            <p class="descripcion">Esta cámara E-330 es la respuesta de Olympus
-                para aquellos fotógrafos que demandaban una pantalla
-                de visualización para aquellas tomas más complicadas y en posturas no muy cómodas.</p>
-        </div>
-
-        <div class="foto">
-            <img src="https://siman.vtexassets.com/arquivos/ids/1108420-800-800?v=637487595786130000&width=800&height=800&aspect=true" alt="Foto 3">
-            <p class="descripcion">Huawei GT2 Pro</p>
-            <p class="descripcion">Deja que lo que llevas en la muñeca se adapte a la perfección a tu vida. El acabado circular y la pantalla redondeada ofrecen un aspecto clásico y una sensación de fluidez, mientras que la impresionante pantalla AMOLED de 1.43 pulgadas lleva el diseño del reloj inteligente a un futuro brillante, justo ante tus ojos.</p>
-        </div>
-
-        <div class="foto">
-            <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=414x1024:format=jpg/path/s721793103b0e5c9b/image/i6432898741bc1dc2/version/1664312412/image.jpg" alt="Foto 4">
-            <p class="descripcion">Tira Led</p>
-            <p class="descripcion">TIRA LED EPISTAR Uso Interior / IP20 con cinta 3M 60 Luces por cada metro Colores en Stock: Blanco 6500K.</p>
-        </div>
-
-        <div class="foto">
-            <img src="https://bunny-cdn.ventasxmayor.com/6060d74cd1d2d2d24cd1d2d2d26363/public/chauchaypalito.com.ar/wp-content/uploads/2022/01/282991.jpg" alt="Foto 5">
-            <p class="descripcion">Lámpara Luna</p>
-            <p class="descripcion">Lámpara Luna con control remoto y LED de 16 colores. Trae Control Remoto para que la puedas manejar a distancia 16 tonos de luz de intensidad e intercambio regulable Se carga por USB y posee botón touch de encendido/apagado y regulación de luz. Incluye pie y cable de carga INFORMACIÓN DETALLADA Material: Plástico - Base de Madera Dimensiones: 15 cm de diámetro.</p>
-        </div>
-
-        <div class="foto">
-            <img src="https://m.media-amazon.com/images/I/51i-5bv61SS._AC_UF1000,1000_QL80_.jpg" alt="Foto 6">
-            <p class="descripcion">Reproductor MP3</p>
-            <p class="descripcion">RUIZU - Reproductor de MP3 con Bluetooth 5.0, reproductor de música portátil de 8 GB para niños, reproductores de audio digital con radio FM, grabadora de voz, reproducción de video, libro electrónico, reproducción de 80 horas, compatible con tarjeta micro SD de hasta 128 GB.</p>
-        </div>
-    </div>
-    <!-- Fin Galería de Fotos -->
-    <footer>
+    
+        <p>&copy; TE CAPACITAMOS PARA TRABAJAR</p>
     </footer>
-    <section style="text-align: center; background-color: #000000; color: rgb(14, 98, 243); font-size: 18px;">
-        <p><b>"Aca tendrás la mejor experiencia tecnológica"<b></p>
-        <p>&copy; TecnoTest</p>
-    </section>
 
+<body>  
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const bubbles = document.querySelectorAll('.bouncing-bubble');
+
+      bubbles.forEach(bubble => {
+        bubble.addEventListener('mouseover', () => {
+          // Cambiar el color y tamaño aquí
+          bubble.style.backgroundColor = '#0000';
+          bubble.style.transform = 'scale(1.5)';
+        });
+
+        bubble.addEventListener('mouseout', () => {
+          // Restaurar color y tamaño original
+          bubble.style.backgroundColor = '';
+          bubble.style.transform = '';
+        });
+      });
+    });
+  </script>
+</body>
 </html>
